@@ -76,8 +76,11 @@ console.log(map2);
 //     console.log(price);
 // }
 
-for (let price of map2.entries()) {
-    console.log(price);
-    console.log(`${price[0]}: ${price[1]}`);
-}
+// for (let price of map2.entries()) {
+//     console.log(price);
+//     console.log(`${price[0]}: ${price[1]}`);
+// }
 
+for (let [shop, price] of map2.entries()) {
+    console.log(`${shop}: ${price}`);
+}
