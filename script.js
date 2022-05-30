@@ -24,4 +24,6 @@ const shops = [
 const map = new Map();
 
 map.set(shops[0], 5000);
+map.set(shops[1], 15000);
+map.set(shops[2], 25000);
 console.log(map);
