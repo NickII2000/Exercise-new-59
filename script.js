@@ -46,16 +46,29 @@ const shops2 = [
 
 const budget = [10, 20, 30];
 
-const map2 = new Map();
+const map2 = new Map([
+    [{ paper: 400 }, 8000]
+]);
 
 shops2.forEach((shop, i) => map2.set(shop, budget[i]));
 
 console.log(map2);
 
-console.log(map2.get(shops2[0]));
-console.log(map2.has(shops2[0]));
-console.log(map2.size);
-map2.delete(shops2[0]);
-console.log(map2);
-console.log(map2.clear());
-console.log(map2);
+// методы Map
+
+// console.log(map2.get(shops2[0]));
+// console.log(map2.has(shops2[0]));
+// console.log(map2.size);
+// map2.delete(shops2[0]);
+// console.log(map2);
+// console.log(map2.clear());
+// console.log(map2);
+// map.keys();
+
+const goods = [];
+for (let shop of map2.keys()) {
+    console.log(shop);
+    goods.push(Object.keys(shop)[0]);
+}
+
+console.log(goods);
