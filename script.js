@@ -35,3 +35,19 @@ map.set(shops[3], 35000).
     set(shops[5], 55000);
 
 console.log(map);
+
+
+
+const shops2 = [
+    { rice: 500 },
+    { oil: 200 },
+    { bread: 50 }
+];
+
+const budget = [10, 20, 30];
+
+const map2 = new Map();
+
+shops2.forEach((shop, i) => map2.set(shop, budget[i]));
+
+console.log(map2);
