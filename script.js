@@ -86,3 +86,6 @@ console.log(map2);
 //     console.log(shop, price);
 // }
 
+map.forEach((value, key, map) => {
+    console.log(key, value);
+});
