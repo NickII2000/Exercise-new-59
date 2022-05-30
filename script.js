@@ -16,6 +16,8 @@ console.log(user);
 const userMap = new Map(Object.entries(user));
 console.log(userMap);
 
+const newUserObj = Object.fromEntries(userMap);
+console.log(newUserObj);
 
 // console.log(Object.keys(user));
 // console.log(typeof (Object.keys(user))[0]);
