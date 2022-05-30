@@ -11,6 +11,7 @@ const user = {
         console.log(`${this.name} ${this.surname}`);
     },
 };
+console.log(user);
 
 const userMap = new Map(Object.entries(user));
 console.log(userMap);
