@@ -65,10 +65,14 @@ console.log(map2);
 // console.log(map2);
 // map.keys();
 
-const goods = [];
-for (let shop of map2.keys()) {
-    console.log(shop);
-    goods.push(Object.keys(shop)[0]);
+// const goods = [];
+// for (let shop of map2.keys()) {
+//     console.log(shop);
+//     goods.push(Object.keys(shop)[0]);
+// }
+// console.log(goods);
+
+for (let price of map2.values()) {
+    console.log(price);
 }
 
-console.log(goods);
