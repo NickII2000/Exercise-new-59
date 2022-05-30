@@ -51,4 +51,11 @@ const map2 = new Map();
 shops2.forEach((shop, i) => map2.set(shop, budget[i]));
 
 console.log(map2);
+
 console.log(map2.get(shops2[0]));
+console.log(map2.has(shops2[0]));
+console.log(map2.size);
+map2.delete(shops2[0]);
+console.log(map2);
+console.log(map2.clear());
+console.log(map2);
