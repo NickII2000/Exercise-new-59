@@ -72,7 +72,12 @@ console.log(map2);
 // }
 // console.log(goods);
 
-for (let price of map2.values()) {
+// for (let price of map2.values()) {
+//     console.log(price);
+// }
+
+for (let price of map2.entries()) {
     console.log(price);
+    console.log(`${price[0]}: ${price[1]}`);
 }
 
